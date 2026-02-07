@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Infinite Cookie | Every Flavor Imaginable</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --primary: #6d4c41; /* Cookie Brown */
@@ -21,12 +26,21 @@
         header {
             background: var(--primary);
             color: white;
-            padding: 2rem;
+            padding: 2.5rem;
             text-align: center;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .tagline { font-style: italic; font-size: 1.2rem; }
+        /* Applying Barrio Font ONLY to the Title */
+        h1 {
+            font-family: 'Barrio', system-ui;
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 0px var(--accent);
+        }
+
+        .tagline { font-style: italic; font-size: 1.2rem; margin-top: 10px; }
 
         .flavor-grid {
             display: grid;
@@ -70,7 +84,7 @@
 <body>
 
     <header>
-        <h1>🍪 The Infinite Cookie</h1>
+        <h1>The Infinite Cookie</h1>
         <p class="tagline">If you can dream it, we can bake it.</p>
     </header>
 
@@ -93,8 +107,7 @@
                 <h3>Cloud Sugar</h3>
                 <p>Soft, pillowy, and topped with a shimmering vanilla glaze.</p>
             </div>
-
-            </div>
+        </div>
     </section>
 
     <footer>
